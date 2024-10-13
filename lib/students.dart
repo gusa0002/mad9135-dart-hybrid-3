@@ -2,10 +2,12 @@ class Students {
   late List<Map<String, String>> people;
 
   void sort(String field){
-    if (field == "first" || field =="second" || field == "email") {
-    people.sort((a,b) => a[field]!.toLowerCase().compareTo(b[field]!.toLowerCase()));
+    if (field == "first" || field =="last" || field == "email") {
+      people.sort((a,b) => a[field]!.compareTo(b[field]!));
+      print("Sorted By $field successfully!");
+    }else{
+      print("Invalid sort value. You can sort only by first, last or email!");
     }
-    print(people);
   }
 
   void output() {

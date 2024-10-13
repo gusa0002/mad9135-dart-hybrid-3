@@ -18,4 +18,5 @@ void main(List<String> arguments) {
   
   var people = students.Students(peopleConverted);
   people.output();
+  people.sort("first");
 }

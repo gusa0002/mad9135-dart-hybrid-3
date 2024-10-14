@@ -19,6 +19,10 @@ void main(List<String> arguments) {
   var people = students.Students(peopleConverted);
   people.output();
   people.sort("email");
-    // people.output();
-  // people.sort("second");
+  people.plus({"first":"Ludovica", "last":"Storti", "email":"ludovicastorti@gmail.com"});
+  people.plus({"first":"Chiara", "last":"Altieri", "email":"chiaraaltieri@gmail.com"});
+  people.output();
+  people.remove("Ludovica");
+  people.remove("Ludovica");
+  people.output();
 }

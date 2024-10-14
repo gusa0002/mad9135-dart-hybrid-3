@@ -17,11 +17,12 @@ class Students {
   }
 
   void plus(Map<String, String> person){
-
+    people.add(person);
+    print("A person added successfully");
   }
 
   void remove(String field) {
-    
+    people.removeWhere((person) => person.containsValue(field));
   }
 
   Students(List<Map<String, String>> people) {
